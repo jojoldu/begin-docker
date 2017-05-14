@@ -4,12 +4,21 @@
 
 ### 테스트 환경 구축
 
-* 도커 우분투에 git 설치
+* Java 이미지 Pull & 컨테이너 생성
+
+![생성](./images/java-컨테이너-생성.png)
+
+* 컨테이너 실행 및 접속
+
+![접속](./images/컨테이너-실행-접속.png)
+
+* 컨테이너에 git 설치
 
 ```
 apt-get update && apt-get install -y git
 ```
 
+* 
 
 ### 명령어
 
@@ -21,6 +30,7 @@ apt-get update && apt-get install -y git
 
 * ```docker run```
   * 도커 다운로드 및 실행
+  * 컨테이너에 호스트 포트 할당은 run 시에만 가능([참고](http://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container))
 
 * 
 

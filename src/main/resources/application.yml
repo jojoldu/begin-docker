@@ -1,3 +1,35 @@
-endpoints:
-  actuator:
-    enabled: true
+server:
+  port: 8080
+
+spring:
+  profiles.active: local
+
+management:
+  context-path: /actuators
+  info.git.mode: full
+
+---
+spring:
+  profiles: local
+  datasource:
+    platform: h2
+
+  h2:
+    console.enabled: true #접속 URL -> jdbc:h2:mem:testdb, ID:sa, PW: (EMPTY)
+    console.path: /h2-console
+  jpa:
+    show-sql: true
+
+---
+spring:
+  profiles: real
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://mysql:3306/study
+    username: study
+    password: study
+    driver-class-name: com.mysql.jdbc.Driver
