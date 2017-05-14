@@ -30,6 +30,6 @@ spring:
       ddl-auto: create
   datasource:
     url: jdbc:mysql://mysql:3306/study
-    username: study
+    username: root
     password: study
     driver-class-name: com.mysql.jdbc.Driver
