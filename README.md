@@ -228,3 +228,9 @@ docker commit -a [작성자] -m [메세지] [로컬 컨테이너 이름]  [생�
 * 이미지 푸시
 
 ![이미지 푸시](./images/이미지_푸시.png)
+
+### 첨부자료
+
+* [발표자료](https://github.com/jojoldu/begin-docker)
+* [이미지 주소](https://hub.docker.com/r/jojoldu/sillim-study-java/tags/)
+* [젠킨스+슬랙+도커](http://jojoldu.tistory.com/139)
